@@ -1,0 +1,47 @@
+.title {
+    font-family: 'Lulo Clean', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    &--medium {
+
+        font-size: calc(1.4rem + 1.5vw);
+
+        @include minw($bp-mobile) {
+            font-size: calc(2.5rem);
+        }
+    }
+
+    &--large {
+        font-size: calc(10rem + 3vw);
+    }
+
+    &--mobile {
+        font-size: calc(1.4rem + 1.3vw);
+    }
+}
+
+.title__offset {
+    display: block;
+    margin-left: 15%;
+
+    &--medium {
+        @include minw($bp-mobile) {
+            margin-left: 12%;
+        }
+    }
+
+    &--s {
+        @include minw($bp-mobile) {
+            margin-left: 9%;
+        }
+    }
+
+    &--xs {
+        @include minw($bp-mobile) {
+            margin-left: 4.5%;
+        }
+    }
+}
